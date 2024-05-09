@@ -16,22 +16,20 @@ def janken():
         print("貴方・・・ちょき")
         if num == 0:
             print("相手はグーでした。貴方の負けです！")
-        elif num == 2:
+        elif num == 1:
             print("相手はチョキでした。あいこです。")
-        elif num == 3:
+        elif num == 2:
             print("相手はパーでした。あなたの勝ちです！")
     elif y == 2:
         print("貴方・・・ぱー")
         if num == 0:
             print("相手はグーでした。あなたの勝ちです！")
-        elif num == 2:
+        elif num == 1:
             print("相手はチョキでした。貴方の負けです！")
-        elif num == 3:
+        elif num == 2:
             print("相手はパーでした。あいこです！")
     else:
         print("そんな手はありません。")
-
-
 
 
 if __name__ == '__main__':
