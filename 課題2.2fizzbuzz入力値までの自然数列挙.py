@@ -1,41 +1,29 @@
-
-#pattern1
+# pattern1
 def fizzbuzz202():
     value = input("正の値を入力してください・・・")
     try:
         value = int(value)
     except:
         print("自然数を入力してください。")
-        return fizzbuzz202()
+        fizzbuzz202()
     if value < 0:
         print("正の値を入れてください。")
-        return  fizzbuzz202()
-    for x in range(1,value):
-        if x % 3 ==0 and value % 5 ==0:
-             print("fizzbuzz")
-        elif x % 3 ==0:
-            print("fizz")
-        elif x % 5 ==0:
-            print("buzz")
-        else :
-            print(x)
+        fizzbuzz202()
 
-if __name__ =="__main__":
+    def fizzbuzz_sub(x):
+        if x % 3 == 0 and x % 5 == 0:
+            return "fizzbuzz"
+        elif x % 3 == 0:
+            return "fizz"
+        elif x % 5 == 0:
+            return "buzz"
+        else:
+            return (x)
+
+    for x in range(1,value+1):
+        print(fizzbuzz_sub(x))
+
+if __name__ == "__main__":
     fizzbuzz202()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# comand + option + L で最後フォーマット整えること。
